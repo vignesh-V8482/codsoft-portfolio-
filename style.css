@@ -1,0 +1,463 @@
+/*NAV BAR*/
+.nav-bar {
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 99%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header ul {
+    width: 70%;
+    height: 10vh;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header ul li a {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: #D6D6D6;
+}
+
+.header ul li a:hover {
+    color: aqua;
+}
+.header .active,.bn:hover{
+    color:aqua;
+}
+.header img {
+    width:95px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 1.2rem;
+    background: linear-gradient(90deg, rgba(255, 232, 80, 1) 0%, rgba(187, 230, 235, 1) 35%, rgba(241, 221, 182, 1) 100%);
+}
+
+.greeting {
+    position: absolute;
+    top: 200px;
+    padding-left: 250px;
+}
+
+.greeting h1 {
+    justify-content: center;
+    color: #fde384;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+.greeting h3 {
+    color: aqua;
+    font-style: oblique;
+}
+.btn a{
+    text-decoration: none;
+    color: #000000;
+    transition: 0.5s;
+}
+.btn {
+    cursor: pointer;
+    position: absolute;
+    border-width: 4px;
+    top: 400px;
+    width: 150px;
+    left: 250px;
+    font-size: 18px;
+    background-color: #E7DEC1;
+    border-color: #000000;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+/*PORTFOLIO*/
+#Portfolio{
+    margin-top: 10%;
+}
+.Portfolio .info{
+    display: flex;
+    align-items: center;
+}
+.Portfolio .info img{
+    background-color: #000000;
+    border-radius: 2rem;
+}
+.Portfolio .info1{
+    font-size: larger;
+    padding-left: 100px;
+    width: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Portfolio .info1 button{
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #E7DEC1;
+    border-color: #000000;
+    border-radius: 0.5rem;
+    border-width: 4px;
+}
+.Portfolio .info1 button a{
+    text-decoration: none;
+    color:  #000000;
+}
+.Portfolio .info1 button:hover{
+    background-color: aqua;
+}
+/*SKILLS*/
+.Skill{
+    margin-top: 15%;
+}
+.sk{
+    padding-left: 15%;
+}
+.skill-cont{
+    width: 70%;
+    background-color: aliceblue;
+    box-shadow:2px 2px 10px #000;
+}
+.Skill h1{
+    font-size: 65px;
+    color: #000000;
+}
+.skill-list{
+    display: block;
+    align-items: center;
+   justify-content:space-evenly;
+   
+}
+.skill-name{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.skill-name b h2{
+    font-size: 30px;
+}
+.skill-name b{
+    font-size: 30px;
+}
+/*CERTIFICATE*/
+#certificate{
+    height: 100vh;
+    margin-top: 10%;
+}
+#certificate h1{
+    font-size: 65px;
+    padding: auto;
+}
+.cerimg{
+    height: 70%;
+    width: 50%;
+    overflow: hidden;
+    padding-left: 20%;
+    padding-top: 3%;
+}
+.certificate{
+    align-items:center ;
+    justify-content: center;
+    box-shadow: 3px 3px 19px rgba(0, 0, 0, 7);
+}
+.certificate img{
+    width: 100%;
+    height: 100%;
+    background-color: #3b5998;
+    display: block;
+}
+
+/*FOOTER*/
+.container{
+    margin-top: 3%;
+    height: 30vh;
+    background-color: #D6D6D6;;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+.icon-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-transition: all 0.15s ease;
+    transition: all 1s ease;
+    margin-left: 20px;
+}
+.icon-container i{
+    font-size: 25px;
+}
+.icon-container-mail {
+    background: #3b5998;
+    color: #fff;
+}
+
+.icon-container-twitter {
+    background:#000;
+    color: #fff;
+}
+.icon-container-github {
+    background: #000;
+    color: #fff;
+}
+.icon-container-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+}
+.icon-container-linkedin{
+    background-color: #405de6;
+    color: #fff;
+}
+
+.icon-text{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.icon-text:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    -webkit-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
+}
+.icon-container:hover .icon-text {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -150%);
+    transform: translate(-50%, -150%);
+}
+.icon-text-mail {
+    background: #3b5998;
+    color: #fff;
+}
+.icon-text-mail:after{
+    border-top-color: #3b5998;
+}
+
+.icon-text-x-twitter {
+    background: #000;
+    color: #fff;
+}
+.icon-text-x-twitter:after{
+    border-top-color: #000;
+}
+
+.icon-text-github {
+    background: #000;
+    color: #fff;
+}
+.icon-text-github:after{
+    border-top-color: #000;
+}
+
+.icon-text-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+}
+.icon-text-instagram:after{
+    border-top-color: #8739B0;
+}
+.icon-text-linkedin{
+    background-color: #405de6;
+    color: #fff;
+}
+.icon-text-linkedin:after{
+    border-top-color:  #405de6;
+}
+/*TAB*/
+@media screen and (max-width:1024px) {
+    .header ul {
+        width: 70%;
+        height: 10vh;
+        padding-top: 10px;
+    }
+    .header img{
+        width: 100px;
+        height: 90px;
+    }
+    .greeting {
+        position: absolute;
+        top: 20%;
+        padding-left: 20%;
+    }
+    .btn{
+        top: 300px;
+    }
+    .header ul li a{
+        font-size: 25px;
+    }
+    /*SKILLS*/
+    .skill-cont{
+        width: 80%;
+        background-color: aliceblue;
+        box-shadow:2px 2px 10px #000;
+    }
+    .Skill h1{
+        font-size: 50px;
+        color: #000000;
+    }
+    /*CERTIFICATE*/
+    #certificate{
+        height: 60vh;
+        margin-top: 10%;
+    }
+    #certificate h1{
+        font-size: 50px;
+    }
+    .cerimg{
+        height: 80%;
+        width: 70%;
+        overflow: hidden;
+        padding-left: 20%;
+        padding-top: 3%;
+    }
+    /*FOOTER*/
+    .container{
+        top: 600px;
+    }
+    .icon-container{
+        width: 100px;
+        height: 100px;
+    }
+    .icon-container i{
+        font-size: 50px;
+    }
+}
+/*mobile*/
+@media screen and (max-width:500px){
+    .nav-bar {
+        width: 0%;
+        background-color: #000000;
+    }
+    .header{
+        justify-content: space-evenly;
+    }
+    .header ul {
+        width: 70%;
+        height: 10vh;
+        padding-top: 10px;
+        margin-right: 30px;
+    }
+    .header img{
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .greeting {
+        position: absolute;
+        top: 20%;
+        padding-left: 20%;
+    }
+    .btn{
+        top: 47%;
+    }
+    .header ul li a{
+        font-size: 13px;
+    }
+    /*PORTFOLIO*/
+    #Portfolio{
+        margin-top: 90px;
+    }
+    .Portfolio .info{
+        display: block;
+        padding-left: 40px;
+    }
+    .Portfolio .info img{
+        width: 300px;
+        background-color: #000000;
+        border-radius: 2rem;
+    }
+    .Portfolio .info1{
+        width: 100%;
+        padding-left: 0px;
+    }
+    /*SKILLS*/
+    .skill-cont{
+        width: 80%;
+        background-color: aliceblue;
+        box-shadow:2px 2px 10px #000;
+    }
+    .Skill h1{
+        font-size: 40px;
+        color: #000000;
+    }
+    .skill-name img{
+        width: 50px;
+    }
+    /*CERTIFICATE*/
+    #certificate{
+        height: 50vh;
+        margin-top: 20%;
+    }
+    #certificate h1{
+        font-size: 40px;
+        color: #000000;
+    }
+    .cerimg{
+        height: 80%;
+        width: 70%;
+        overflow: hidden;
+        padding-left: 20%;
+        padding-top: 50px;
+    }
+     /*FOOTER*/
+     .container{
+        width: 100%;
+        margin-top: 5vh;
+        height: 20vh;
+        background-color: #D6D6D6;;
+    }
+    .wrapper{
+        height: 20vh;
+    }
+    .icon-container{
+        width: 60px;
+        height: 60px;
+        padding: none;
+    }
+    .icon-container i{
+        font-size: 40px;
+    }
+}

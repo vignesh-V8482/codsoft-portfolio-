@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" href="images/logoV.png" type="image/icon type">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div class="nav_bar">
+            <img src="images/home.jpg" alt="" height="650vh" width="100%">
+            <div class="header">
+                <img src="images/logoV.png" alt="">
+
+                <ul>
+                    <li><a href="index.html" class="bn active">Home</a></li>
+                    <li><a href="#Portfolio" class="bn">Portfolio</a></li>
+                    <li><a href="#Skill" class="bn">Skill</a></li>
+                    <li><a href="#footer" class="bn">Contact</a></li>
+                    <li><a href="pdf/Vignesh Resume_20240711_084204_0000.pdf" class="bn">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="greeting">
+            <h1 id="hello">Hello & Welcome</h1>
+            <h3>This is my official website</h3>
+        </div>
+        <button class="btn"><a href="#Portfolio">visit Portfolio</a></button>
+    </nav>
+    <section class="Portfolio" id="Portfolio">
+        <div class="info">
+            <img src="images/PSX_20240730_102751.jpg" alt="" width="35%">
+            <div class="info1">
+
+                <h1>Hello! </h1>
+                <p>  I am <strong>Vignesh.V </strong>currently pursuing a professional bachelor's degree at
+                    Dhaanish Ahmed College of Engineering, affiliated with Anna University.</p>
+
+                <button><a href="#Skill">skills</a></button>
+                <button><a href="pdf/Vignesh Resume_20240711_084204_0000.pdf" download="">Download cv</a></button>
+            </div>
+        </div>
+
+    </section>
+    <section class="Skill" id="Skill">
+
+        <h1>SKILLS</h1>
+        <div class="sk">
+            <div class="skill-cont">
+                <div class="skill-list">
+                    <div class="skill-name">
+                        <img src="images/html.png" alt="" width="10%">
+
+                        <p><b>Html</b></p>
+                    </div>
+                    <hr>
+                    <div class="skill-name">
+                        <h2><b>CSS</b></h2>
+                        <img src="images/css.png" alt="" width="9%">
+                    </div>
+                    <hr>
+                    <div class="skill-name">
+                        <img src="images/js.png" alt="" width="8%">
+                        <h2>JAVASCRIPT</h2>
+                    </div>
+                    <hr>
+                    <div class="skill-name">
+                        <h2><b>JAVA</b></h2>
+                        <img src="images/java.png" alt="" width="12%">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <Section id="certificate">
+        <h1>CERTIFICATES</h1>
+        <div class="cerimg">
+            <div class="certificate">
+                <img src="images/mongodb.jpeg" alt="" class="iete" id="img">
+                <img src="images/google.jpeg" alt="" class="skill" id="img">
+                <img src="images/c1.jpg" alt="" class="formdirect" id="img">
+            </div>
+        </div>
+        </div>
+    </Section>
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="wrapper">
+
+                <a href="mailto:vijayvicky20048482@gmail.com" class="icon-container icon-container-mail">
+                    <i  class="fa-sharp fa-solid fa-envelope"></i>
+                    <div class="icon-text icon-text-mail">Mail</div>
+                </a>
+
+                <a href="https://github.com/vignesh-V8482" class="icon-container icon-container-github">
+                    <i class="fab fa-github"></i>
+                    <div class="icon-text icon-text-github">Github</div>
+                </a>
+
+                <a href="https://instagram.com/vijayvicky8482" class="icon-container icon-container-instagram">
+                    <i class="fab fa-instagram"></i>
+                    <div class="icon-text icon-text-instagram">Instagram</div>
+                </a>
+                <a href="https://www.linkedin.com/in/vignesh-v-2130172b7/" class="icon-container icon-container-linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="icon-text icon-text-linkedin">LinkedIn</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var firstindex = 0;
+    function autoslide() {
+
+        var cer;
+        const img = document.querySelectorAll('.certificate img');
+        for (cer = 0; cer < img.length; cer++) {
+            img[cer].style.display = "none";
+
+        }
+        firstindex++;
+        if (firstindex > img.length) {
+            firstindex = 1;
+        }
+        img[firstindex - 1].style.display = "block";
+        setTimeout(autoslide, 2000)
+    }
+
+    autoslide();
+</script>
+
+</html>
